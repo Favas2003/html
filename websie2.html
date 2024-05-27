@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif; /* Adjust font family as needed */
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh; /* Set minimum height for full viewport */
+        }
+
+        .left-section {
+            flex: 1;
+            background-color: #f0f8ff;  /* Adjust background color */
+            padding: 2rem; /* Adjust padding */
+        }
+
+        .left-section h1 {
+            font-size: 3rem;  /* Adjust heading size */
+            margin-bottom: 1rem; /* Adjust margin */
+        }
+
+        .left-section p {
+            font-size: 1.2rem;  /* Adjust paragraph size */
+            line-height: 1.5; /* Adjust line height */
+        }
+
+        .right-section {
+            flex: 2;
+            background-image: url("images/your-image.jpg"); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Media queries for responsiveness (adjust as needed) */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack sections on small screens */
+            }
+
+            .right-section {
+                background-image: none; /* Hide background image on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Your Text Here</h1>  <p>Your compelling description...</p>  </div>
+        <div class="right-section"></div>
+    </div>
+</body>
+</html>
